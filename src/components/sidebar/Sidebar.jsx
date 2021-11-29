@@ -1,7 +1,7 @@
 
 import React from "react"
 import {Button} from '@material-ui/core'
-import {Add, Inbox} from '@material-ui/icons'
+import {Add, Inbox, Star} from '@material-ui/icons'
 
 import './Sidebar.css'
 import SidebarOption from "../sidebarOption/SidebarOption"
@@ -15,6 +15,7 @@ const Sidebar = () => {
         Compose
       </Button>
       <SidebarOption Icon={Inbox} title="Inbox" number={54} />
+      <SidebarOption Icon={Star} title="Star" number={54} />
     </div>
   )
 }
