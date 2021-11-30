@@ -19,7 +19,7 @@
   font-weight: 300;
 }
 .sidebarOption:hover > p {
-  display:inline;
+  display: inline;
 }
 .sidebarOption--active >p {
   display:inline !important;
