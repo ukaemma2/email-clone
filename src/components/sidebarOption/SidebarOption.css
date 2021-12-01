@@ -21,7 +21,7 @@
 .sidebarOption:hover > p {
   display: inline;
 }
-.sidebarOption--active >p {
+.sidebarOption--active > p {
   display:inline !important;
 }
 .sidebarOption > .MuiSvgIcon-root{
@@ -29,9 +29,17 @@
 }
 .sidebarOption:hover,
 .sidebarOption:hover >p,
-.sidebarOption:hover > h3{
+.sidebarOption:hover > h3,
+.sidebarOption--active,
+.sidebarOption--active> p,
+.sidebarOption--active> h3{
   background-color: #fcecee;
   color: #c04b37;
   font-weight: 800!important;
   
+}
+.sidebar_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
