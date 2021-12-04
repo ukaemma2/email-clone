@@ -2,7 +2,7 @@ import React from "react"
 
 const EmailList = () => {
   return (
-    <div>
+    <div className="emailist">
       
     </div>
   )

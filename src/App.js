@@ -1,6 +1,8 @@
 
+
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+
+import {BrowserRouter, Routes,  Route} from 'react-router-dom'
 import './App.css';
 import { Header } from './components/header/Header';
 import EmailList from './components/mails/EmailList';
@@ -9,22 +11,22 @@ import Sidebar  from './components/sidebar/Sidebar';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Header />
         <Sidebar />
         <div className="app__body">
-          <Switch>
-            <Route path="/mail">
+          <Routes>
+            <Route path="/Mail">
               <Mail />
             </Route>
-            <Route>
+            <Route path="/EmailList"> 
               <EmailList />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </div>
-    </Router> rr
+    </BrowserRouter>  
   );
 }
 
