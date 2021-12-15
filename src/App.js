@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Link } from "react-router-dom";
+import {  BrowserRouter  as Router,  Routes,  Route} from "react-router-dom";
 import './App.css';
 import { Header } from './components/header/Header';
 import EmailList from './components/mails/EmailList';
@@ -11,18 +11,21 @@ import Sidebar  from './components/sidebar/Sidebar';
 
 function App() {
   return (
-    
+    <Router>
       <div className="App">
         <Header />
-        <Sidebar />
+        
         <div className="app__body">
-          
-          <Link path="/" element={<Mail />} />
-          <Link path="/" element={<EmailList />} /> 
-          
+        <Sidebar />
+        <Mail />
+        <EmailList />
+          <Routes>
+            <Route exact path="/" element={<Mail />} />
+            <Route exact path="/" element={<EmailList />} /> 
+          </Routes>
         </div>
       </div>
-      
+    </Router>  
   );
 }
 export default App;

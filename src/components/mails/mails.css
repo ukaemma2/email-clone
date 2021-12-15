@@ -1,0 +1,38 @@
+.emailist{
+  flex:1;
+  overflow: scroll;
+}
+.email_list_setting{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  background-color:white;
+  z-index: 999;
+  padding-right: 10px;
+
+}
+.imailList_section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 999;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .email_list_setting{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color:white;
+    z-index: 999;
+    padding-right: 0px;
+  
+  }
+}
