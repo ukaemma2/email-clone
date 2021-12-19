@@ -57,9 +57,24 @@ const EmailList = () => {
         <Section Icon={LocalOffer} title="Promotion" color="green" />
       </div>
       <div className="emaillist__list">
-        <EmailRow>
-
-        </EmailRow>
+        <EmailRow 
+          title="Twitch"
+          subject="My fellow streamer!!!"
+          description="This is test"
+          time="10pm"
+         />
+           <EmailRow 
+          title="Twitch"
+          subject="My fellow streamer!!!"
+          description="This is testThis is testThis is testThis is testThis is testThis is testThis is test"
+          time="10pm"
+         />
+           <EmailRow 
+          title="Twitch"
+          subject="My fellow streamer!!!"
+          description="This is test"
+          time="10pm"
+         />
       </div>
     </div>
   )

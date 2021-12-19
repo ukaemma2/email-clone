@@ -15,16 +15,20 @@ function EmailRow({title,id,subject, description, time}) {
         <LabelImportantOutlined />
       </IconButton>
     </div>
-    <div className="emailRow__title">
-
-    </div>
+    <h3 className="emailRow__title">
+      {title}
+    </h3>
     <div className="emailRow__message">
-
+      <h4>
+        {subject} {' '}
+        <span className="email_description">
+          {description}
+        </span>
+      </h4>
     </div>
     <div className="emailRow__description">
-
+      {time}
     </div>
-      
     </div>
   )
 }
