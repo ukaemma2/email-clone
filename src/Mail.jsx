@@ -2,8 +2,8 @@ import React from "react"
 const Mail = () => {
   return (
     <div>
-      
-    </div>
+      nfdjdfhnj
+    </div> 
   )
 }
 
