@@ -9,7 +9,7 @@ function EmailRow({title,id,subject, description, time}) {
   const navigate = useNavigate()
 
   return (
-    <div onClick={() => navigate("/Mail")} className="emailRow">
+    <div onClick={() => navigate("/mail")} className="emailRow">
       <div className="emailRow__options">
         <IconButton><CheckBoxOutlineBlank /></IconButton>
         <IconButton>
