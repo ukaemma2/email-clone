@@ -6,9 +6,12 @@ import {
   Email, 
   Error, 
   LabelImportant, 
-  MoreVert, 
+  MoreVert,
+  UnfoldMore,
   MoveToInbox,
-  WatchLater
+  WatchLater,
+  Print,
+  ExitToApp
  } from "@material-ui/icons"
 import React from "react"
 import "./Mail.css"
@@ -51,7 +54,15 @@ const Mail = () => {
 
         </div>
         <div className="email__toolsRight">
-
+          <IconButton>
+            <UnfoldMore />
+          </IconButton>
+          <IconButton>
+            <Print />
+          </IconButton>
+          <IconButton>
+            <ExitToApp />
+          </IconButton>
         </div>
       </div>
     </div> 
