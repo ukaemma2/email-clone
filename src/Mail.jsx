@@ -51,7 +51,6 @@ const Mail = () => {
           <IconButton>
             <MoreVert />
           </IconButton>
-
         </div>
         <div className="email__toolsRight">
           <IconButton>
