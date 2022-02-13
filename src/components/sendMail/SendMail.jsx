@@ -1,9 +1,22 @@
+import { Button } from '@material-ui/core';
+import { Close } from '@material-ui/icons';
 import React from 'react';
 import './SendMail.css'
 
 function SendMail() {
-  return <div>
-
+  return <div className="sendmail">
+    <div className="sendMail__header">
+      <h3>New Message</h3>
+      <Close className='sendMail__close' />
+    </div>
+    <form>
+      <input type="text" />
+      <input type="text" /> 
+      <input type="text" />
+      <div className="sedMail__options">
+        <Button>Send</Button>
+      </div>
+    </form>
   </div>;
 }
 

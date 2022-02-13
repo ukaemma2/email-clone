@@ -1,0 +1,9 @@
+.sendmail{
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  background-color: #cfcccc;
+  width: 40px;
+  height: 400px;
+  min-width: 500px;
+}

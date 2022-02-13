@@ -17,10 +17,13 @@ import {
 
 import './Sidebar.css'
 import SidebarOption from "../sidebarOption/SidebarOption"
+import { useNavigate } from "react-router-dom"
+
 const Sidebar = () => {
+  const navigate = useNavigate()
   return (
     <div className="sidebar">
-      <Button className="sidebar_compose"
+      <Button onClick={()=> navigate('/sendMail')} className="sidebar_compose"
         startIcon={<Add fontSize="large"
         />}
       >
