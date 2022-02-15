@@ -17,13 +17,15 @@ import {
 
 import './Sidebar.css'
 import SidebarOption from "../sidebarOption/SidebarOption"
-import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { openSendMessage } from "../../features/mailSlice"
+
 
 const Sidebar = () => {
-  const navigate = useNavigate()
+ const dispatch = useDispatch()
   return (
     <div className="sidebar">
-      <Button onClick={()=> navigate('/sendMail')} className="sidebar_compose"
+      <Button onClick={()=> dispatch(openSendMessage())} className="sidebar_compose"
         startIcon={<Add fontSize="large"
         />}
       >
