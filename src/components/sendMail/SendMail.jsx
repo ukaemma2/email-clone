@@ -11,7 +11,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 function SendMail() {
-  const {register, handleSubmit, watch, formState: {errors}} = useForm()
+  const {register, handleSubmit, formState: {errors}} = useForm()
   const dispatch = useDispatch()
 
   const onSubmit = (formData) => {

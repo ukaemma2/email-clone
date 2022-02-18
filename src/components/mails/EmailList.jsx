@@ -23,17 +23,18 @@ const EmailList = () => {
   const [emails, setEmails] = useState([]);
 
   useEffect(() => {
-    db.collection('emails')
+   const getEmails = db.collection('emails')
     .orderBy('timestamp, desc')
     .onSnapshot((snapshot) => 
     setEmails(
       snapshot.docs.map((doc) =>({
         id: doc.id,
-        data: doc.data(),
-      
+        data: doc.data()
     }))))
+    return () => {
+      getEmails()
+    }
   }, [])
-  
   return (
     <div className="emailist">
       <div className="email_list_setting">
@@ -72,9 +73,9 @@ const EmailList = () => {
         <Section Icon={LocalOffer} title="Promotion" color="green" />
       </div>
       <div className="emaillist__list">
-        {emails && emails.map(({id, data: { to, subject, message, timestamp}}) => {
-          console.log(setEmails())
-       return  <EmailRow 
+        {emails && emails.map(({id, data: {to, subject, message, timestamp }}) => {
+          console.log(emails.to)
+        return  <EmailRow
           id={id}
           key={id}
           title={to}
@@ -82,7 +83,10 @@ const EmailList = () => {
           description={message}
           time={new Date(timestamp?.seconds* 1000).toUTCString()}
         />
-      })}
+      }) 
+     
+      }
+    
       </div>
     </div>
   )

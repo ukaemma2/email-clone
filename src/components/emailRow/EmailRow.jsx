@@ -19,6 +19,7 @@ function EmailRow({title,id,subject, description, time}) {
           <LabelImportantOutlined />
         </IconButton>
       </div>
+      <p>{id}</p>
       <h3 className="emailRow__title">
         {title}
       </h3>
