@@ -74,7 +74,7 @@ const EmailList = () => {
       </div>
       <div className="emaillist__list">
         {emails && emails.map(({id, data: {to, subject, message, timestamp }}) => {
-          console.log(emails.to)
+          console.log(emails)
         return  <EmailRow
           id={id}
           key={id}
